@@ -27,4 +27,5 @@ def req(id):
 def display_all():
 	return json.dumps(images)
 
-app.run()
+if __name__ == "__main__":
+	app.run(debug=True)
