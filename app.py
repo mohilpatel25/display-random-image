@@ -3,8 +3,7 @@ import requests
 import json
 
 app = flask.Flask(__name__)
-app.config["DEBUG"] = True
-
+images = {}
 
 @app.route('/', methods=['GET'])
 def home():
