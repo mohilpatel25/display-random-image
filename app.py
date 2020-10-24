@@ -15,7 +15,7 @@ def home():
 
 @app.route('/<int:id>', methods=['GET'])
 def req(id):
-	if(id in images.keys()):
+	if(id in list(images.keys())):
 		out = "<img src='"+str(images[id])+"'/>"
 	else:
 		response = requests.get('http://www.picsum.photos/200')
